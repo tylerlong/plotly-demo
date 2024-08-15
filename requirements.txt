@@ -1,0 +1,6 @@
+pytest
+ruff
+plotly
+polars
+pandas
+pyarrow
