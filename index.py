@@ -12,12 +12,9 @@ def main():
 
     df = pl.DataFrame(data)
 
-    # Convert the Polars DataFrame to a Pandas DataFrame for use with Plotly Express
-    df_pandas = df.to_pandas()
-
     # Create a stacked bar chart using Plotly Express
     fig = px.bar(  # type: ignore
-        df_pandas,
+        df,
         x='Region',
         y='Sales',
         color='Product',
